@@ -5,9 +5,9 @@ CREATE TABLE books(
     publication_year int CONSTRAINT incorrect_year CHECK(publication_year <= 2023) NOT NULL,
     publishing_house varchar(255) NOT NULL,
     category_of_book varchar(100) NOT NULL,
-    synopsys varchar(1000) DEFAULT NULL,
+    synopsys varchar(1000),
     num_of_copy int NOT NULL CONSTRAINT incorrect_number CHECK(num_of_copy >= 0),
-    status_of_book varchar(500)
+    status_of_book varchar(500) DEFAULT NULL
 );
 
 ALTER TABLE books 
