@@ -11,7 +11,7 @@ CREATE TABLE books(
 );
 
 ALTER TABLE books 
-ADD  CONSTRAINT must_be_not_empty CHECK(autor!='' AND name_of_book!=''),
+ADD  CONSTRAINT must_be_not_empty CHECK (autor!='' AND name_of_book!=''),
 ADD CONSTRAINT uniqel_names UNIQUE(autor,name_of_book);
 
 INSERT INTO books (autor,name_of_book,publication_year,publishing_house,category_of_book,synopsys,num_of_copy,status_of_book) VALUES
