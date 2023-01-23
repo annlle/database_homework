@@ -9,6 +9,16 @@
             "database": "Qwerty",
             "username": "postgres",
             "password": "qwerty"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "practice",
+            "database": "university",
+            "username": "postgres",
+            "password": "qwerty"
         }
     ]
 }
